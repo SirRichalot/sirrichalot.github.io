@@ -32,11 +32,46 @@ max-width: 900px;
 margin: 0 auto;
 }
 
+/* Menu bar testing stufffff css*/
+.navbar {
+  background-color: #1e1e1e;
+  padding: 10px 0;
+  border-bottom: 0px solid #2e2e2e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+}
+.navbar li {
+  display: inline;
+}
+.navbar a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+.navbar a:hover {
+  color: #40ffdf;
+  border-bottom: 2px solid #40ffdf;
+}
+
+
 /* Hero Section */
 .hero {
  text-align: center;
   margin-bottom: 50px;
 }
+
+
 .hero .heading {
   /* stolen css shit, type writer stuff */
 display: inline-block;
@@ -113,7 +148,7 @@ margin-bottom: 15px;
 display: inline-flex;
 align-items: center;
 color: #e0e0e0;
-border: 1px solid #eb4646;
+border: 1px solid #e0e0e0;
 padding: 5px 10px;
 border-radius: 4px;
 text-decoration: none;
@@ -129,12 +164,21 @@ color: #121212;
 <body>
 <div class="container">
 <!-- Hero Section - main bit of the title and the typing element text dont forget to close if edit the paragraphs -->
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="#">contact</a></li>
+    <li><a href="#">trade</a></li>
+  </ul>
+</nav>
+
 <section class="hero">
 <div class="heading">Come on innnnnnn</div>
 <p>
- Welcome to the official website of Sir Richalot. Find all related information, links and content below. <span class="movingdaddytext">HTML and CSS test site :3</span>
+ Test development website <span class="movingdaddytext">:)</span>
 </p>
-<p>Site bought for domain and testing purposes, nothing special here move on if visiting.</p>
+<p>Another line of text</p>
 
 
 </section>
@@ -151,12 +195,24 @@ color: #121212;
 </p>
 </section>
 </div> <!-- remember to close off the divs, body and html work as well as section when done-->
+
+<!--Footer section experiment with links and linking svgs for future -->
+<footer class="footer">
+<p>&copy; 2025 Sir Richalot.</p>
+<p>
+  <a href="https://discord.gg/M2QJnPAyQF" target="_blank" class="footer-link">Discord</a> | 
+    <a href="https://www.roblox.com/users/25946025/profile" target="_blank" class="footer-link">Roblox</a>
+</p>
+
+</footer>
 </body>
 </html>
 
 <!-- Next section to develop: 
- Try to code discord user link, server link etc to sit underneath roblox profile-->
+ Try to code discord user link, server link etc to sit underneath roblox profile DONE-->
 
- <!--after then mess around with navigation bar and add basic css elements  -->
+ <!--after then mess around with navigation bar and add basic css elements DONE -->
+ 
+ <!-- Experiment with full scale development with css-->
 
 
