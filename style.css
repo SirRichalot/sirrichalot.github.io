@@ -1,0 +1,127 @@
+<style>
+  /* Basic Reset */
+* {
+margin: 0;
+ padding: 0;
+box-sizing: border-box;
+}
+/* Global Styles */
+body {
+background: #121212;
+ color: #e0e0e0;
+ font-family: 'Fira Mono', monospace;
+line-height: 1.6;
+padding: 20px;
+}
+.container {
+max-width: 900px;
+margin: 0 auto;
+}
+
+/* Menu bar testing stufffff css*/
+.navbar {
+  background-color: #1e1e1e;
+  padding: 10px 0;
+  border-bottom: 0px solid #2e2e2e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+}
+.navbar li {
+  display: inline;
+}
+.navbar a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+.navbar a:hover {
+  color: #40ffdf;
+  border-bottom: 2px solid #40ffdf;
+}
+
+/* Hero Section */
+.hero {
+ text-align: center;
+  margin-bottom: 50px;
+}
+.hero .heading {
+
+/* terminal text */
+display: inline-block;
+border-right: .15em solid #e0e0e0;
+ letter-spacing: .15em;
+font-size: 2.5em;
+ font-weight: bold;
+white-space: nowrap;
+overflow: hidden;
+animation: typing 3.5s steps(30, end) forwards, blink-caret .75s step-end infinite;
+text-align: center;
+max-width: fit-content; /*replace with: width 100 to extend to the full page */
+}
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+@keyframes blink-caret {
+ from, to { border-color: transparent; }
+ 50% { border-color: #e0e0e0; }
+}
+
+/* On mobile, allow the heading to wrap - doesnt work  */
+@media (max-width: 600px) {
+.hero .heading {
+font-size: 1.8em;
+white-space: normal;
+}
+}
+.hero p {
+font-size: 1.2em;
+margin: 20px 0;
+}
+.movingdaddytext {
+ display: inline-block;
+animation: pulse 1s infinite alternate;
+color: #40ffdf; /* changes colour of the supreme autistic daddy text */
+font-weight: bold;
+}
+@keyframes pulse {
+from { transform: scale(1); }
+to { transform: scale(1.1); }
+}
+
+/* keeping middle centered plus the .class elements n other stuff  */
+.daddysprofile {
+text-align: center;
+margin-bottom: 50px;
+}
+.daddysprofile h2 {
+font-size: 1.8em;
+margin-bottom: 15px;
+}
+.daddysprofile a.roblox {
+display: inline-flex;
+align-items: center;
+color: #e0e0e0;
+border: 1px solid #e0e0e0;
+padding: 5px 10px;
+border-radius: 4px;
+text-decoration: none;
+transition: background 0.3s;
+font-size: 1em;
+}
+.daddysprofile a.roblox:hover { 
+background: #e0e0e0;
+color: #121212;
+}
+</style>
