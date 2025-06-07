@@ -124,4 +124,9 @@ font-size: 1em;
 background: #e0e0e0;
 color: #121212;
 }
+
+.no-image {
+  width:200px;
+  height: 200px;
+}
 </style>
