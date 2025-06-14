@@ -46,8 +46,39 @@ margin: 0 auto;
   border-bottom: 2px solid transparent;
 }
 .navbar a:hover {
-  color: #40ffdf;
-  border-bottom: 2px solid #40ffdf;
+  color: #e9e9e9;
+  border-bottom: 2px solid #e9e9e9;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-main {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.divider {
+  height: 24px;
+  width: 1px;
+  background-color: #666;
+}
+
+.login-btn {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  border: 0px solid #e9e9e9;
+  padding: 0px 0px;
+  border-radius: 0px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Hero Section */
@@ -129,4 +160,15 @@ color: #121212;
   width:100px;
   height: 100px;
 }
+
+.logo-image {
+  display: block;
+  margin: 0 auto 30px;
+  width: 200px;    /* change to whatever width you want */
+  height: 80px;    /* set a fixed height if you want */
+  object-fit: contain; /* keeps the aspect ratio without stretching */
+  border-radius: 0; 
+}
+
+
 </style>
